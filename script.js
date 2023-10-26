@@ -18,5 +18,9 @@ new_quote.addEventListener("click", () => {
 });
 
 const shareTweet = (data) => {
-  window.open(`https://twitter.com/intent/tweet?text=${data.quote}`);
+  window.open(
+    `https://twitter.com/intent/tweet?text=${
+      data.quote + "  " + "-" + data.author
+    }`
+  );
 };
